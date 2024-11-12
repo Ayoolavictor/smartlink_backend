@@ -7,7 +7,9 @@ const cartRouter = require("./routes/cartRoutes");
 const orderRouter = require("./routes/orderRoutes");
 
 app.use(express.json());
-
+app.get("/", (req, res) => {
+  res.send("This is the backend");
+});
 app.use("/api", userRouter);
 app.use("/api", authRouter);
 app.use("/api", productRouter);
