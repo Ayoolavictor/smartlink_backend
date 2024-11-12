@@ -1,10 +1,10 @@
 const express = require("express");
 const app = express();
-const userRouter = require("../routes/userRoutes");
-const authRouter = require("../routes/authRoutes");
-const productRouter = require("../routes/productRoutes");
-const cartRouter = require("../routes/cartRoutes");
-const orderRouter = require("../routes/orderRoutes");
+const userRouter = require("./routes/userRoutes");
+const authRouter = require("./routes/authRoutes");
+const productRouter = require("./routes/productRoutes");
+const cartRouter = require("./routes/cartRoutes");
+const orderRouter = require("./routes/orderRoutes");
 
 app.use(express.json());
 app.get("/", (req, res) => {
